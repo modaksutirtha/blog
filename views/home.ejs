@@ -1,0 +1,11 @@
+<%-include("./partial/header")-%>
+
+<h1>HOMEaaaa</h1>
+<p><%= homlor %></p>
+
+<%for(var i=0; i<newposts.length; i++){%>
+<h2> <a href="/post/<%=newposts[i].title%>"><%=newposts[i].title%></a> </h2>
+<p class="doit"><%=newposts[i].body.substring(0,100)%>
+<a href="/post/<%=newposts[i].title%>">Read more</a></p>
+<%}%>
+<%-include("./partial/footer")-%>
